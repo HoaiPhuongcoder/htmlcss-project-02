@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #ffb900;
+  --font-heading: "Sen", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* active */
+
+/* Common */
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 24px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  border-radius: 999px;
+  padding: 0 16px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  background: #171100;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+/* Header ===================================================================== */
+.header {
+  background: #fffcf4;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+  z-index: 1;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+.nav a {
+  position: relative;
+  padding: 8px 21px;
+  font-size: 1.6rem;
+  color: #5f5b53;
+}
+.nav a:hover,
+.nav li.active a {
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
+}
+.nav li.active a::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 21px;
+  display: block;
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+}
+.header .sign-up-btn {
+  min-width: 144px;
+}
+.header .action {
+  margin-left: 49px;
+}
+/* Hero============================================== */
+.hero {
+  padding-top: 56px;
+  padding-bottom: 65px;
+  background: #fffcf4;
+}
+.hero .body {
+  display: flex;
+}
+.hero .media-block {
+  width: 48%;
+  position: relative;
+}
+
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+}
+.hero-summary {
+  position: absolute;
+  right: 0;
+  bottom: 48px;
+  width: 270px;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+.hero-summary .item {
+  display: flex;
+  margin-bottom: 14px;
+  align-items: center;
+}
+.hero-summary .item:last-child {
+  margin-bottom: 0;
+}
+.hero-summary .item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 48px;
+  width: 48px;
+  height: 48px;
+  background: #fff9e8;
+  border-radius: 50%;
+}
+.hero-summary .item:nth-of-type(2) .icon {
+  background: #fcefff;
+}
+.hero-summary .item:nth-of-type(3) .icon {
+  background: #ebeaff;
+}
+.hero-summary .info {
+  margin-left: 16px;
+}
+.hero-summary .info .label {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85;
+}
+.hero-summary .info .title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.7;
+  color: #171100;
+}
+.hero .content-block {
+  width: 52%;
+  padding: 64px 0 0 130px;
+}
+.hero .heading {
+  font-family: var(--font-heading);
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.17; /* 117.241% */
+  letter-spacing: -1.16px;
+  color: #171100;
+}
+.hero .desc {
+  margin-top: 22px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+  color: #5f5b53;
+}
+.hero .cta-group {
+  margin: 38px 0 48px;
+  display: flex;
+  align-items: center;
+}
+.hero-cta {
+  background: var(--primary-color);
+  min-width: 180px;
+  padding: 6px 0;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.hero .watch-video {
+  align-items: center;
+  margin-left: 28px;
+  display: flex;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.hero .watch-video .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
+}
+.hero .watch-video span {
+  margin-left: 14px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+  color: #171100;
+}
+.hero .stats strong {
+  padding-right: 8px;
+  font-family: var(--font-heading);
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.23;
+  color: #171100;
+}
+.hero .stats {
+  margin-top: 8px;
+}
+.hero .stats strong + strong {
+  margin-left: 28px;
+}
+/* Popular */
