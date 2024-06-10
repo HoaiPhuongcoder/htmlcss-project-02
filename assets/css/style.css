@@ -362,67 +362,60 @@ a {
   background: var(--primary-color);
 }
 /* Quote =========================================*/
-.quote {
+.feedback {
   margin-top: 135px;
-  padding: 96px 135px;
+  padding: 96px 0;
   display: flex;
   background: #2e2100;
 }
-.student-block {
-  width: 159px;
-  height: 188px;
+.feedback-item {
+  display: flex;
 }
-.student-block .image {
+.feedback-item .avatar {
   display: block;
   width: 72px;
   height: 72px;
   object-fit: cover;
   border-radius: 50%;
 }
-.student-block .sub-title.heading {
+.feedback-item .info .title {
+  font-family: var(--font-heading);
   margin-top: 18px;
-  color: #f7f7f7;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.42; /* 141.667% */
+  color: #f7f7f7;
 }
-.student-block .desc {
+.feedback-item .info .desc {
   margin-top: 4px;
-  color: #bfbcb2;
   font-size: 1.4rem;
-  font-weight: 400;
   line-height: 1.85; /* 185.714% */
+  color: #bfbcb2;
 }
-.student-block .dash {
+.feedback-item .dots {
   margin-top: 28px;
   display: flex;
   gap: 6px;
 }
-.student-block .dash-btn {
-  padding: 0px;
-  background: transparent;
-  border: none;
-  color: #634700;
+.feedback-item .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
 }
-.quote-block {
-  position: relative;
-  display: flex;
-  width: 770px;
-  height: 188px;
+.feedback-item .dot.active {
+  background: var(--primary-color);
+  cursor: default;
+}
+.feedback-item .content {
+  width: 66%;
   margin-left: auto;
 }
-.quote-block .quote-info {
-  margin-top: auto;
-  width: 740px;
-  color: #fff;
+.feedback-item blockquote {
+  margin-left: 30px;
   font-size: 2.6rem;
   font-style: italic;
-  font-weight: 400;
-  line-height: 1.53;
-}
-.quote-block .quotes {
-  left: -30px;
-  position: absolute;
-  width: 30px;
-  height: 28px;
+  line-height: 1.5;
+  color: #fff;
 }
